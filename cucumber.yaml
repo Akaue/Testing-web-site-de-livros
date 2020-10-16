@@ -1,0 +1,5 @@
+#executando o cucumber e gerando report no site  https://reports.cucumber.io/reports 
+#  default: --publish
+
+ default: --publish-quiet
+
