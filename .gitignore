@@ -1,5 +1,3 @@
-  
-.html
-.png
-.xml
-.lock
+*.html
+*.xml
+

@@ -16,6 +16,6 @@ Então('vou para o carrinho de compras') do
 end
   
 Então('preencho todos os dados e realizo a encomenda') do
-   
+  log 'testando'
 end
   
