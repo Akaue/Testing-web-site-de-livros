@@ -1,4 +1,4 @@
-#executando o cucumber e gerando report no site  https://reports.cucumber.io/reports 
+#executando o cucumber,gerando report no site  https://reports.cucumber.io/reports 
 #  default: --publish
 bdd: --format pretty
 json: --format=message 
