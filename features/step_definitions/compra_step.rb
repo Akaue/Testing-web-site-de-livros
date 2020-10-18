@@ -5,7 +5,7 @@ Dado('que estou logado na pagina de exibição de livros') do
 end
   
 Quando('eu escolho o livro {string} e adiciono no carrinho') do |livro|
-    expect(@shop.livro_android).to have_content livro
+    expect(page).to have_content livro
     @shop.add_cesta
     @shop.carrinho
 end
