@@ -16,7 +16,7 @@ Quando('insiro dados de cadastro existente') do
 end
   
 Então('vejo a mensagem {string}') do |expect_message|
-    expect(@cadastro.message_error).to eql expect_message    
+    expect(page).to have_content expect_message    
 end
   
 Dado('insiro meu email e senha fraca') do
@@ -24,6 +24,6 @@ Dado('insiro meu email e senha fraca') do
 end
   
 Então('a mensagem {string} é visualizada') do |expect_weak|
-    expect(@cadastro.message_weak).to eql expect_weak    
+    expect(page).to have_content expect_weak    
 end
 

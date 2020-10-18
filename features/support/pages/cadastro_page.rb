@@ -31,12 +31,4 @@ class CadastroPage
   end
 
 
-  def message_error
-  find('.woocommerce-error').text
-  end
-
-  def message_weak
-  find('.woocommerce-password-strength.short').text
-  end
-
 end
