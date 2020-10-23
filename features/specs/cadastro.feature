@@ -6,7 +6,7 @@ Funcionalidade: Criar conta  no site de venda de livros
 
 Cenário: Criando conta
 Dado que estou no site de vendas de livros
-E realizo meu cadastro
+  E realizo meu cadastro
 Então devo receber mensagem Hello
 
 Cenário: Criando conta existente
@@ -16,5 +16,5 @@ Então vejo a mensagem "Error: An account is already registered with your email 
 
 Cenário: Criando conta com senha fraca
 Dado que estou no site de vendas de livros
-E insiro meu email e senha fraca
+  E insiro meu email e senha fraca
 Então  a mensagem "Very weak - Please enter a stronger password." é visualizada

@@ -25,5 +25,3 @@ class LoginPage
 end
 
 
-
-# 'akaueteste@teste.com','TeStE21!lLoS9im'
