@@ -29,4 +29,12 @@ class ShopPage
    find('.woocommerce-thankyou-order-received').text
   end
 
+  def add
+     find('.input-text.qty.text').set '3'
+  end
+
+  def update_basket
+  find(:xpath,'//*[@id="page-34"]/div/div[1]/form/table/tbody/tr[2]/td/input[1]').click
+  end
+
 end

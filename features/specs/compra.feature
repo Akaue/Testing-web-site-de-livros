@@ -18,7 +18,7 @@ Esquema do Cenário: Comprando livro
 | livro                       | mensagem                                 | 
 | "Android Quick Start Guide" |"Thank you. Your order has been received."|
   
-@test
+@schema
 Cenário: Comprando outro livro
   Dado que estou logado na pagina de exibição de livros
   Quando eu escolho um livro "Functional Programming in JS" e adiciono no carrinho
@@ -26,4 +26,10 @@ Cenário: Comprando outro livro
   E preencho todos os dados e realizo a encomenda
   Então é apresentada a mensagem "Thank you. Your order has been received."
 
-
+@test
+Cenário: Adiconar mais de um mesmo livro
+  Dado que estou logado na pagina de exibição de livros
+  Quando eu escolho um livro "Functional Programming in JS" e adiciono no carrinho
+  Então vou para o carrinho de compras e adiciono mais livros 
+  E preencho todos os dados e realizo a encomenda
+  Então é apresentada a mensagem "Thank you. Your order has been received."

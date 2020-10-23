@@ -1,7 +1,8 @@
-#executando o cucumber,gerando report no site  https://reports.cucumber.io/reports 
-#  default: --publish
+---
+default: -p bdd -p json --publish-quiet
+html: --format html --out=log/report.html
+json: --format json --out=log/report.json
 bdd: --format pretty
-json: --format=message 
-stand-alone: --json-formatter
-default: --publish-quiet
+progress: --format progress
+
 
