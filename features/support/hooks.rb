@@ -28,7 +28,6 @@ end
 #        config.report_title = "Evidências do teste"
 #        config.compress_image = true
 #        config.additional_info = {"App" => "Web Livros","Data de execução" => "23/10/2020" }
-#      end
- 
+#      end 
 #    ReportBuilder.build_report
 #  end
