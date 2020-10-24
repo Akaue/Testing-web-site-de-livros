@@ -36,6 +36,9 @@ class CadastroPage
     find('#billing_company').set Faker::Company.bs
     find('#billing_email').set Faker::Internet.email  
     find('#billing_phone').set Faker::Number.number(digits: 10)
+    find('#s2id_billing_country').click
+    find('#s2id_autogen1_search').set 'brazil'
+    find(:xpath, '//*[@id="select2-results-1"]/li[1]').click
     find('#billing_address_1').set Faker::Address.street_address
     find('#billing_city').set Faker::Address.city 
     find('#s2id_billing_state').click
@@ -43,7 +46,7 @@ class CadastroPage
     find('.select2-match').click
     find('#billing_postcode').set '06852470'
     
-  
+    
   end
 
 end

@@ -27,7 +27,7 @@ Cenário: Comprando outro livro
   Então é apresentada a mensagem "Thank you. Your order has been received."
 
 @test
-Cenário: Adiconar mais de um mesmo livro
+Cenário: Adicionar mais de um mesmo livro
   Dado que estou logado na pagina de exibição de livros
   Quando eu escolho um livro "Functional Programming in JS" e adiciono no carrinho
   Então vou para o carrinho de compras e adiciono mais livros 

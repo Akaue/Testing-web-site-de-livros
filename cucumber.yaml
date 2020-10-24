@@ -1,6 +1,11 @@
 ---
-default: -p progress -p json --publish-quiet
+default: -p bdd -p json  -p dot --publish-quiet
 html: --format html --out=log/report.html
-json:  --format=message --out=log/report.json
+json: --format json --out=log/report.json
+json: --format=message
 bdd: --format pretty
-progress: --format progress
+dot: --format progress
+
+
+
+
