@@ -24,7 +24,7 @@ at_exit do
      config.report_types = [:retry, :html]
      config.report_title = 'Evidências dos testes'
      config.compress_image = true
-     config.additional_info = {"app" => "web","Data de execução" => "20/10/2020"}
+     config.additional_info = {"app" => "web livros","Data de execução" => "20/10/2020"}
    end
  ReportBuilder.build_report
 end
