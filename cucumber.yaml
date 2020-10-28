@@ -4,6 +4,6 @@ ci: -p headless -p json -p pretty
 firefox: BROWSER=firefox
 chrome: BROWSER=chrome
 headless: BROWSER=headless
-json: --format json --out=logs/report.json
+json: --format json --out=log/report.json
 pretty: --format pretty
 progress: --format progresss
