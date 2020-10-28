@@ -1,0 +1,38 @@
+pipeline {
+ agent any
+
+   stages {
+       stage('build'){
+         steps{
+           echo  'Building or Resolve Dependecies!'
+           sh 'bundle install'
+     }  
+   }
+   stage('test'){
+         steps{
+           echo  'Running regression tests' 
+
+        }
+    }
+
+    stage('UAT'){
+         steps{
+           echo  'Wait for User Acceptance'
+               input(message: 'Go to production?'  ok: 'Yes') 
+         }
+    }
+    
+    stage('Prod'){
+         steps{
+           echo  'Web App is ready!'
+         }
+    }
+
+    stage('Akaue'){
+         steps{
+           echo  'Parabens cara!'
+         }
+    }
+
+ }
+}
