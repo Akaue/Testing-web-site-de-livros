@@ -6,6 +6,7 @@ gem "selenium-webdriver", "3.142.6"
 gem 'faker'
 gem 'rspec',"3.8.0"
 gem "report_builder","1.7"
+gem 'ffi'
 
 
 

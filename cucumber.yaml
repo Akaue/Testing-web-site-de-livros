@@ -1,11 +1,10 @@
 ---
-default: -p bdd -p json  -p dot --publish-quiet
-html: --format html --out=log/report.html
-json: --format json --out=log/report.json
+default: -p chrome -p json -p pretty --publish-quiet
+ci: -p headless -p json -p pretty
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
+json: --format json --out=logs/report.json
 json: --format=message
-bdd: --format pretty
-dot: --format progress
-
-
-
-
+pretty: --format pretty
+progress: --format progress
