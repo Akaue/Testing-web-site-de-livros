@@ -21,12 +21,7 @@ pipeline {
              sh 'bundle exec cucumber'
 
         }    
-         post{
-                always{
-                    cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
-                }
-            }
-        }
+     }
 
     stage('UAT'){
          steps{
@@ -38,12 +33,6 @@ pipeline {
     stage('Prod'){
          steps{
            echo  'Web App is ready!'
-         }
-    }
-
-    stage('Akaue1'){
-         steps{
-           echo  'Parabens cara!'
          }
     }
 
