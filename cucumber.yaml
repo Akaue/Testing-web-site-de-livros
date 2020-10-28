@@ -1,5 +1,5 @@
 ---
-default: -p headless  -p pretty --publish-quiet
+default: -p headless -p json -p pretty --publish-quiet
 ci: -p headless -p json -p pretty
 firefox: BROWSER=firefox
 chrome: BROWSER=chrome
