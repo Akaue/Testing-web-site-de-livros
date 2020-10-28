@@ -5,12 +5,13 @@ pipeline {
        stage('build'){
          steps{
            echo  'Building or Resolve Dependecies!'
-           sh 'bundle install'
+            sh 'bundle install'
      }  
    }
    stage('test'){
          steps{
            echo  'Running regression tests' 
+             sh 'bundle exec cucumber -p ci'
 
         }
     }
@@ -18,7 +19,7 @@ pipeline {
     stage('UAT'){
          steps{
            echo  'Wait for User Acceptance'
-               input(message: 'Go to production?'  ok: 'Yes') 
+               input(message: 'Go to production?',  ok: 'Yes') 
          }
     }
     
