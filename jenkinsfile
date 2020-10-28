@@ -11,16 +11,22 @@ pipeline {
        stage('build'){
          steps{
            echo  'Building or Resolve Dependecies!'
+            sh 'rm -f Gemfile.lock'
             sh 'bundle install'
      }  
    }
    stage('test'){
          steps{
-           echo  'Running regression tests' 
+           echo 'Running regression tests' 
              sh 'bundle exec cucumber -p ci'
 
+        }    
+         post{
+                always{
+                    cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+                }
+            }
         }
-    }
 
     stage('UAT'){
          steps{
