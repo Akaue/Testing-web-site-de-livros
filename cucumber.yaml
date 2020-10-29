@@ -1,9 +1,10 @@
 ---
-default: -p ci -p json -p pretty --publish-quiet
-ci: -p headless -p json -p pretty
+default: -p ci -p json -p pretty  -p cucumber
+ci: -p headless -p json -p pretty -p cucumber
 firefox: BROWSER=firefox
 chrome: BROWSER=chrome
 headless: BROWSER=headless
 json: --format json --out=log/report.json
 pretty: --format pretty
 progress: --format progresss
+cucumber: --publish-quiet
