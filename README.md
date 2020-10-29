@@ -3,5 +3,6 @@
 
 ## Objetivo
 `
-Teste realizado com fins de estudo e aprimoramento em testes web, utilizando as tecnologias ruby,cucumber,capybara,Rspec e subindo no servidor de CI Jenkins
+Teste realizado com fins de estudo e aprimoramento em testes web, utilizando as tecnologias Ruby,Cucumber,Capybara,Rspec e subindo no servidor de CI Jenkins.
+Conhecimento adquirido nos cursos da QAninja
 `
