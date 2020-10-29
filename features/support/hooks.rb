@@ -15,6 +15,3 @@ After do |scenario|
 
 end
 
-
-
-s
