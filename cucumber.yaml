@@ -1,5 +1,5 @@
 ---
-default: -p ci -p json -p pretty  -p msg
+default: -p ci -p json -p pretty 
 ci: -p headless -p json -p pretty -p msg
 firefox: BROWSER=firefox
 chrome: BROWSER=chrome
