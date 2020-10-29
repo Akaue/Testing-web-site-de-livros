@@ -6,18 +6,17 @@ pipeline {
     }
 
  }
-
    stages {
-       stage('build'){
+       stage('Build'){
          steps{
            echo  'Building or Resolve Dependecies!'
             sh 'rm -f Gemfile.lock'
             sh 'bundle install'
      }  
    }
-   stage('test'){
+   stage('Test'){
          steps{
-           echo 'Running regression tests' 
+           echo 'Running regression tests,take it easy' 
              sh 'bundle exec cucumber -p ci'
 
         }    
@@ -26,13 +25,13 @@ pipeline {
     stage('UAT'){
          steps{
            echo  'Wait for User Acceptance'
-               input(message: 'Go to production?',  ok: 'Yes') 
+               input(message: 'Go to production??',  ok: 'Yes') 
          }
     }
     
     stage('Prod'){
          steps{
-           echo  'Web App is ready!'
+           echo  'Web App is ready! Nice'
          }
     }
 
