@@ -1,5 +1,6 @@
 #language:pt
 
+@compraTest
 Funcionalidade: Comprando livros para estudar
   Eu sou uma pessoa curiosa, e desejo conhecer outras linguagens de programação
   sendo assim quero comprar alguns livros para estudo

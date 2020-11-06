@@ -37,7 +37,7 @@ end
 
   
 Então('é apresentada a mensagem {string}') do |msg|
-  mensagem = expect(@shop.final_compra).to have_content msg
+  expect(@shop.final_compra).to have_content msg
   
 end
 
