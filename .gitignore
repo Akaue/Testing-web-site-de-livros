@@ -2,7 +2,7 @@ logs/screenshots
 logs/*.html
 logs/*.json
 Gemfile.lock
-*.Dockerfile
+
 
 
 
